@@ -1,0 +1,3 @@
+cd /etc/samba
+ls-F
+ls-F /A/ComplaintShouldGoToStderr

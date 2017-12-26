@@ -1,0 +1,20 @@
+#
+## a script for setting up the directories/files/links for CS570 Program 3
+
+if (-d ~/Three) then
+	echo There is already a directory called ~/Three
+	echo This script is therefore exiting without doing ANYTHING.
+	echo Either create the links by hand, or remove the directory and try again.
+	exit 1
+endif
+
+mkdir ~/Three
+ln -s ~cs570/Three/makefile ~/Three/makefile
+ln -s ~cs570/Three/CHK.h ~/Three/CHK.h
+ln -s ~cs570/Three/p3.h ~/Three/p3.h
+ln -s ~cs570/Three/p3main.c ~/Three/p3main.c
+cp -ip ~cs570/Three/p3helper.c ~/Three/p3helper.c
+echo Done. GradeEarly has NOT been created for you, in case you do not intend
+echo to submit early.  Here is what has been created:
+/bin/ls -l ~/Three/*
+exit 0
