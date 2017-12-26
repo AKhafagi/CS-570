@@ -1,0 +1,4 @@
+/bin/uname > your.outputO -a 
+echo this should be REFUSED > your.outputO
+tr a-z A-Z < your.outputO
+echo this should be ALLOWED >! your.outputO

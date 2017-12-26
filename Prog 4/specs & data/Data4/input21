@@ -1,0 +1,8 @@
+cd /tmp this and the next 4 should all cause complaints to be sent to stderr
+#NotALegalExecutable, so this should cause the exec() to fail
+< somefile
+/bin/uname <
+sort | &
+echo This echo and the next cd SHOULD be executed by your shell and NOT cause errors
+cd ..
+pwd

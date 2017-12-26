@@ -1,0 +1,1 @@
+cat /home/cs/faculty/cs570/Data1/input1|tr a-z A-Z
